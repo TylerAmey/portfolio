@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Mabook';
+    src: url('Mabook.ttf') format('truetype');
+}
+
+#name{
+    font-family: 'Mabook', sans-serif !important;
+}
+
+.title, .subtitle{
+    font-weight: bold;
+}
