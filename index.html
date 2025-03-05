@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyler Amey's Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mediaqueries.css" />
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <!-- Font Awesome (Icons) -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="module" src="/index.js"></script>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <main>
+      <nav class="navbar is-transparent is-fixed-top has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="/assets/Logo.png" alt="Logo">
+            </a>
+            <a class="navbar-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#about">
+                    <div class="has-icons-left mb-5">
+                        <button class="button" type="button">
+                            <span class="icon is-small is-left is-centered">
+                                <i class="fa fa-solid fa-address-card"></i>
+                            </span>
+                            <p name="about">About</p> 
+                        </button>
+                    </div>
+                </a>
+                <a class="navbar-item" href="#experience">
+                  <div class="has-icons-left mb-5">
+                      <button class="button" type="button">
+                          <span class="icon is-small is-left is-centered">
+                              <i class="fa fa-solid fa-book"></i>
+                          </span>
+                          <p name="about">Experience</p> 
+                      </button>
+                  </div>
+                </a>
+                <a class="navbar-item" href="#projects">
+                  <div class="has-icons-left mb-5">
+                      <button class="button" type="button">
+                          <span class="icon is-small is-left is-centered">
+                              <i class="fa fa-solid fa-folder-open"></i>
+                          </span>
+                          <p name="about">Projects</p> 
+                      </button>
+                  </div>
+                </a>
+                <a class="navbar-item" href="#contact">
+                  <div class="has-icons-left mb-5">
+                      <button class="button" type="button">
+                          <span class="icon is-small is-left is-centered">
+                              <i class="fa fa-solid fa-address-book"></i>
+                          </span>
+                          <p name="about">Contact</p> 
+                      </button>
+                  </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+      <header>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Tyler Amey</h1>
+          <p class="section__text__p2">Frontend Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-1"
+              onclick="window.open('assets/Resume-3-3-25.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/tyler-amey/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/TylerAmey'"
+            />
+          </div>
+        </div>
+      </header>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container right-text">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>3+ years Frontend Development</p>
+                <p>3+ years Web Development</p>
+                <p>1.5+ years Internship Experience</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Bachelor of Science</p>
+                <h4>New Media Interactive Development</h4>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Born and raised in Buffalo New York, I've always had a passion for technology, games, and design. Graduating with a Bachelor of Science in New Media Interactive Development, I've developed a passion for improving one's day-to-day life through technology. I strive to create fresh experiences and innovative designs and interfaces for my users, and my goal is to be able to provide out of the box solutions for companies and users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="light">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node.js</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>UI/UX Design</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Adobe Suite</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Unity/C#</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Agile Development</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Physical Computing</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Cloud Development</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React.js</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java & Python</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="full">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="assets/qrcode.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Moog QR Code Generator</h2>
+              <div class="btn-container">
+                <!-- <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button> -->
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('assets/qrcode-process-doc.pdf')"
+                >
+                  Process Doc
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('assets/qrcode-process-doc.pdf')"
+                >
+                  Process Doc
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="assets/gravity-golf.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Gravity Golf <br>(Coming Soon)</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/JPSwim77/GravityGolfRepo/tree/main'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://jpswim77.itch.io/gravity-golf'"
+                >
+                  Itch.io Page
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="assets/excelify.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Excelify <br> Node Application</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('assets/excelify-final-documentation.pdf')"
+                >
+                  Milestone Doc
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p class="contacts"><a class="contacts" href="mailto:tyleramey@gmail.com">tyleramey@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a class="contacts" href="https://www.linkedin.com/in/tyler-amey/">LinkedIn</a></p>
+          </div>
+        </div>
+        <p class="section__text__p1">Thank you!</p>
+      </section>
+      <img src="/assets/tyler.png">
+    <img src="/assets/spacedark.png" hidden>
+    </main>
+  </body>
+</html>
