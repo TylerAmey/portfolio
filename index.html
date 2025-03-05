@@ -15,10 +15,10 @@
   </head>
   <body>
     <canvas id="bg"></canvas>
-    <main>
+    <main id="welcome">
       <nav class="navbar is-transparent is-fixed-top has-shadow">
         <div class="navbar-brand">
-            <a class="navbar-item">
+            <a class="navbar-item" href="#welcome">
                 <img src="/assets/Logo.png" alt="Logo">
             </a>
             <a class="navbar-burger" id="burger">
@@ -82,7 +82,7 @@
           <div class="btn-container">
             <button
               class="btn btn-color-1"
-              onclick="window.open('assets/Resume-3-3-25.pdf')"
+              onclick="location.href='https://people.rit.edu/tja5919/Resume.pdf'"
             >
               Download CV
             </button>
@@ -304,24 +304,19 @@
               </div>
               <h2 class="experience-sub-title project-title">Moog QR Code Generator</h2>
               <div class="btn-container">
-                <!-- <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button> -->
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="window.open('assets/qrcode-process-doc.pdf')"
+                  onclick="location.href='https://people.rit.edu/tja5919/qrcode-process-doc.pdf'"
                 >
                   Process Doc
                 </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('assets/qrcode-process-doc.pdf')"
-                >
-                  Process Doc
-                </button>
+                <a href="#contact">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                  >
+                    Request Build
+                  </button>
+                </a>
               </div>
             </div>
             <div class="details-container color-container">
